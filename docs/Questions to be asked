@@ -1,0 +1,153 @@
+Azure Enterprise Discovery Meeting – Question Bank
+
+1. Business Requirements:
+
+What is driving this cloud migration?
+What business problems are you trying to solve?
+What are your business objectives?
+What are the expected outcomes of this migration?
+What defines a successful project?
+What are the project timelines and milestones?
+Are there any hard deadlines?
+Who are the business stakeholders?
+Who are the technical stakeholders?
+Who will approve architectural decisions?
+Are there any future expansion plans?
+
+2. Current Environment Assessment
+
+Can you share the current architecture diagrams?
+Can you explain your existing infrastructure?
+Is the environment on-premises, cloud, or hybrid?
+Which virtualization platform are you using?
+Which cloud providers are currently in use?
+How many data centers do you have?
+How many servers are currently running?
+What operating systems are being used?
+What databases are currently deployed?
+What storage solutions are in use?
+
+3. Application Assessment
+
+How many applications are currently running?
+Which applications are business critical?
+Which applications require high availability?
+Which applications can tolerate downtime?
+Which applications are customer-facing?
+Which applications are internal?
+Which applications are legacy?
+Which applications are cloud-ready?
+Which applications cannot be migrated?
+What technologies are used by the applications?
+Are applications tightly coupled?
+Are there application dependencies?
+
+4. User and Growth Assessment
+
+How many users currently access the applications?
+How many internal users are there?
+How many external users are there?
+How many users are expected in the next year?
+What is the expected growth over the next three to five years?
+Are there seasonal traffic spikes?
+Are applications accessed globally?
+Which regions generate the highest traffic?
+
+5. Networking
+
+Can you explain the current network architecture?
+What IP address ranges are currently used?
+Are there overlapping IP ranges?
+How is connectivity established between locations?
+Will Azure require VPN or ExpressRoute connectivity?
+Are there existing firewalls?
+How is DNS currently managed?
+Do you require private connectivity?
+Are there existing network segmentation policies?
+Are there bandwidth limitations?
+
+6. Identity and Access Management
+
+Which identity provider is currently used?
+Is there an on-premises Active Directory?
+Is Microsoft Entra ID already implemented?
+Are identities synchronized?
+Is Multi-Factor Authentication enabled?
+Is Conditional Access configured?
+Is Privileged Identity Management implemented?
+How are administrative accounts managed?
+How is Role-Based Access Control managed today?
+Are service accounts currently used?
+
+7. Security and Compliance
+
+What security standards must be followed?
+Which compliance regulations apply?
+Are there internal security policies?
+What encryption standards are required?
+Are customer-managed keys required?
+How are secrets currently managed?
+What network security controls exist?
+Are vulnerability assessments performed regularly?
+Are penetration tests conducted?
+Are security audits performed?
+
+8. Governance
+
+Who is allowed to create cloud resources?
+Who approves production deployments?
+Are naming standards already defined?
+Are tagging standards already defined?
+Are governance policies currently implemented?
+How are subscriptions managed?
+Are management groups already in use?
+What resource lifecycle policies exist?
+How are production changes approved?
+
+9. Monitoring and Operations
+
+Which monitoring tools are currently used?
+How are alerts generated?
+How are incidents managed?
+Is there a centralized operations team?
+What are the required Service Level Agreements (SLAs)?
+What are the required Service Level Objectives (SLOs)?
+How are logs stored?
+How long are logs retained?
+What operational reports are required?
+
+10. Disaster Recovery and Business Continuity
+
+What Recovery Time Objective (RTO) is required?
+What Recovery Point Objective (RPO) is required?
+Is cross-region disaster recovery required?
+What backup strategy is currently used?
+How often are backups performed?
+How long are backups retained?
+How often is disaster recovery tested?
+Which applications require disaster recovery?
+What is the acceptable downtime for critical applications?
+
+11. Cost Management
+
+What is the migration budget?
+What is the expected monthly cloud budget?
+Is there a cost optimization strategy?
+Will budgets be assigned to departments?
+Is chargeback or showback required?
+How are cloud costs monitored?
+Are Reserved Instances or Savings Plans planned?
+What cost reporting is required?
+
+12. DevOps and Automation
+
+Which source control system is used?
+Which CI/CD platform is currently used?
+Is Infrastructure as Code mandatory?
+Which Infrastructure as Code tool has been selected?
+Are automated deployments required?
+Are deployment approvals required?
+What branching strategy is followed?
+Are rollback procedures defined?
+How are releases managed?
+How are infrastructure changes tracked?
