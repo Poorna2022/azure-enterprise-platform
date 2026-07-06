@@ -1,126 +1,172 @@
+# Documentation
 
-1️⃣ Main README.md (Repository Root)
+## Overview
 
-This is your landing page.
+This directory contains all documentation related to the design, implementation, governance, operation, and continuous improvement of the Azure Enterprise Platform.
 
-What is the name of the project? # Azure Enterprise Platform
+The documentation follows an **architecture-first** approach, where business requirements, architectural decisions, and design principles are documented before infrastructure implementation. This ensures that every technical decision is traceable, maintainable, and aligned with enterprise best practices.
 
-What is this project about?
-## Project Overview
+The documents in this directory are intended to simulate the documentation that would typically be produced during a real enterprise cloud transformation project.
 
-Azure Enterprise Platform is a production-oriented learning and implementation project that demonstrates how to design, document, and build an enterprise-scale Microsoft Azure platform using modern cloud architecture principles and Infrastructure as Code.
+---
 
-Rather than focusing only on deploying Azure resources, this repository follows the complete lifecycle of an enterprise cloud transformation—from business requirement discovery and architecture design to governance, networking, security, automation, Kubernetes, monitoring, and operational excellence.
+# Documentation Goals
 
-The project is structured to mirror the way large organizations and consulting firms approach cloud adoption, emphasizing architectural thinking, documentation, standardization, automation, and long-term maintainability.
+The documentation aims to:
 
-Every implementation within this repository is supported by documented design decisions, reusable Infrastructure as Code modules, operational guidance, and industry best practices.
+- Capture business and technical requirements.
+- Record architectural decisions and their justifications.
+- Define implementation standards and best practices.
+- Provide operational procedures and runbooks.
+- Document governance, security, networking, and monitoring strategies.
+- Maintain traceability between business requirements and technical implementation.
+- Serve as a reference for engineers, architects, administrators, and future contributors.
 
-What do we want this project to become?
-## Project Vision
+---
 
-The vision of this project is to build a complete Azure Enterprise Platform that reflects the architecture, governance, operational standards, and engineering practices commonly adopted by large enterprises.
+# Documentation Structure
 
-This repository aims to demonstrate not only technical implementation skills but also the architectural decision-making process behind designing secure, scalable, resilient, and cost-effective cloud platforms.
+```
+docs/
+├── README.md
+├── architecture/
+├── decisions/
+├── runbooks/
+└── best-practices/
+```
 
-The long-term goal is to create a reference implementation that can serve as both a personal learning journey and a practical guide for cloud engineers, DevOps engineers, platform engineers, and architects.
+---
 
-Why are we building this project?
-## Objectives
+# Directory Overview
 
-The primary objectives of this project are:
+## architecture/
 
-- Design an enterprise-ready Azure platform using industry best practices.
-- Follow an architecture-first approach before implementation.
-- Build reusable Terraform modules for Azure infrastructure.
-- Implement secure and scalable networking patterns.
-- Deploy and manage Azure Kubernetes Service (AKS).
-- Implement governance using Azure Policy, RBAC, and Management Groups.
-- Automate infrastructure deployment using GitHub Actions.
-- Implement centralized monitoring and logging.
-- Follow operational best practices through runbooks and documentation.
-- Demonstrate production-quality Infrastructure as Code.
-- Develop architectural thinking through documented design decisions.
+Contains the architectural design of the Azure Enterprise Platform.
 
-What will this repository contain?
-## Project Scope
+Topics include:
 
-The project will cover the end-to-end implementation of an enterprise Azure platform, including:
-
-- Azure Landing Zones
-- Management Groups
+- Enterprise Requirements
+- Azure Management Groups
 - Subscription Strategy
-- Resource Organization
-- Hub-and-Spoke Networking
-- Azure Firewall
-- Private DNS
-- Private Endpoints
-- Azure Kubernetes Service (AKS)
-- Azure Key Vault
-- Azure Monitor
-- Log Analytics
-- Azure Policy
-- Microsoft Entra ID Integration
-- Role-Based Access Control (RBAC)
-- GitHub Actions CI/CD
-- Terraform Modules
-- Operational Runbooks
-- Disaster Recovery Planning
+- Azure Landing Zones
+- Networking Architecture
+- Identity and Access Management
+- Security Architecture
+- AKS Platform Design
+- Monitoring and Observability
+- Disaster Recovery
 - Cost Optimization
-- Security Best Practices
+
+---
+
+## decisions/
+
+Contains Architecture Decision Records (ADRs).
+
+Each document records:
+
+- The problem or requirement.
+- Available solution options.
+- The selected solution.
+- Architectural justification.
+- Benefits and trade-offs.
+- Impact on the overall platform.
+
+These records help explain why specific architectural decisions were made throughout the project.
+
+---
+
+## runbooks/
+
+Contains operational documentation used to support the day-to-day management of the Azure Enterprise Platform.
+
+Examples include:
+
+- Infrastructure deployment procedures.
+- Terraform deployment process.
+- AKS operational procedures.
+- Backup and recovery.
+- Incident response.
+- Platform maintenance.
+- Disaster recovery procedures.
+
+---
+
+## best-practices/
+
+Contains standards, implementation guidelines, and recommended practices followed throughout the project.
+
+Topics include:
+
+- Azure Best Practices
+- Terraform Standards
+- Git Standards
+- GitHub Actions Best Practices
+- AKS Best Practices
+- Networking Standards
+- Security Standards
+- Documentation Standards
+
+---
+
+# Documentation Principles
+
+The documentation within this repository follows the following principles:
+
+- Architecture before implementation.
+- Business requirements drive technical decisions.
+- Documentation is maintained alongside code.
+- Every major architectural decision is documented.
+- Documentation remains version-controlled with the source code.
+- Security, governance, and operational considerations are documented from the beginning of the project.
+- Documentation is continuously reviewed and improved as the platform evolves.
+
+---
+
+# Document Lifecycle
+
+Each document within this repository progresses through the following lifecycle:
+
+1. Requirement Identification
+2. Solution Design
+3. Architecture Review
+4. Implementation
+5. Validation
+6. Operational Readiness
+7. Continuous Improvement
+
+---
+
+# Intended Audience
+
+This documentation is intended for:
+
+- Cloud Architects
+- Cloud Engineers
+- Platform Engineers
+- DevOps Engineers
+- Site Reliability Engineers (SREs)
+- Infrastructure Engineers
+- Security Engineers
+- Operations Teams
+- Students and professionals learning Azure enterprise architecture
+
+---
+
+# Related Documentation
+
+- Repository README
 - Architecture Documentation
+- Architecture Decision Records
+- Operational Runbooks
+- Best Practices
+- Terraform Documentation
+- CI/CD Documentation
 
-What principles guide every decision in this repository?
-## Architecture Principles
+---
 
-Every design and implementation within this repository follows a consistent set of architectural principles:
+# Maintenance
 
-- Business requirements drive architecture.
-- Security is built into the design from the beginning.
-- Infrastructure is managed entirely as code.
-- Automation is preferred over manual operations.
-- Reusability is prioritized through modular design.
-- Governance is enforced consistently across environments.
-- Production, testing, and development environments remain isolated.
-- Monitoring and observability are implemented from day one.
-- Cost optimization is considered throughout the platform lifecycle.
-- Documentation is maintained alongside implementation.
-- Continuous improvement is encouraged through iterative design reviews.
+This documentation is maintained as part of the project lifecycle.
 
-Which technologies are used?
-## Technology Stack
-
-### Cloud Platform
-- Microsoft Azure
-
-### Infrastructure as Code
-- Terraform
-
-### Container Platform
-- Azure Kubernetes Service (AKS)
-
-### Identity and Security
-- Microsoft Entra ID
-- Azure RBAC
-- Azure Policy
-- Azure Key Vault
-
-### Networking
-- Hub-and-Spoke Architecture
-- Azure Firewall
-- Private Endpoints
-- Private DNS
-
-### CI/CD
-- GitHub Actions
-- Azure DevOps (Optional)
-
-### Monitoring
-- Azure Monitor
-- Log Analytics
-- Application Insights
-
-### Scripting
-- PowerShell
-- Bash
-- Python
+All architectural changes, implementation updates, operational improvements, and design decisions should be reflected within the appropriate documentation to ensure accuracy and consistency across the repository.
